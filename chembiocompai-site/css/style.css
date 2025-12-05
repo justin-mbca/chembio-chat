@@ -1,3 +1,45 @@
+/* Header Flexbox Layout */
+.main-header {
+    background: #1e3c72;
+    color: #fff;
+    padding: 1.5rem 0 1rem 0;
+    box-shadow: 0 2px 8px rgba(30,60,114,0.08);
+}
+.header-content {
+    display: flex;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.logo {
+    width: 64px;
+    height: 64px;
+    margin-right: 24px;
+}
+.header-center {
+    flex: 1;
+    text-align: center;
+}
+.header-center h1 {
+    margin: 0;
+    font-size: 2.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.header-center nav {
+    margin-top: 8px;
+}
+.header-center nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 16px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+}
+.header-center nav a:hover {
+    color: #ffb347;
+}
 body {
     font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
     background: linear-gradient(120deg, #1e3c72 0%, #2a5298 100%);
