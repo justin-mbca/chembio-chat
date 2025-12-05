@@ -44,12 +44,6 @@
     max-width: 900px;
     margin: 0 auto;
 }
-.logo-top-right {
-    position: fixed;
-    top: 12px;
-    right: 24px;
-    z-index: 100;
-}
 .main-header {
     position: relative;
 }
