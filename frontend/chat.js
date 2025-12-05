@@ -1,3 +1,4 @@
+/**
  * LLM Chat App Frontend
  *
  * Handles the chat UI interactions and communication with the backend API.
@@ -97,60 +98,4 @@ async function sendMessage() {
 		while (true) {
 			const { done, value } = await reader.read();
 
-			if (done) {
-			}
-
-			// Decode chunk
-			const chunk = decoder.decode(value, { stream: true });
-
-			// Process SSE format
-			const lines = chunk.split("\n");
-			for (const line of lines) {
-				try {
-					const jsonData = JSON.parse(line);
-					if (jsonData.response) {
-						// Append new content to existing text
-						responseText += jsonData.response;
-						assistantMessageEl.querySelector("p").textContent = responseText;
-
-						// Scroll to bottom
-						chatMessages.scrollTop = chatMessages.scrollHeight;
-					}
-				} catch (e) {
-					console.error("Error parsing JSON:", e);
-				}
-			}
-		}
-
-		// Add completed response to chat history
-		chatHistory.push({ role: "assistant", content: responseText });
-	} catch (error) {
-		console.error("Error:", error);
-		addMessageToChat(
-			"assistant",
-			"Sorry, there was an error processing your request.",
-		);
-	} finally {
-		// Hide typing indicator
-		typingIndicator.classList.remove("visible");
-
-		// Re-enable input
-		isProcessing = false;
-		userInput.disabled = false;
-		sendButton.disabled = false;
-		userInput.focus();
-	}
-}
-
-/**
- * Helper function to add message to chat
- */
-function addMessageToChat(role, content) {
-	const messageEl = document.createElement("div");
-	messageEl.className = `message ${role}-message`;
-	messageEl.innerHTML = `<p>${content}</p>`;
-	chatMessages.appendChild(messageEl);
-
-	// Scroll to bottom
-	chatMessages.scrollTop = chatMessages.scrollHeight;
-}
+// ...existing code...
