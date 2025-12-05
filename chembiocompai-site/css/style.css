@@ -8,7 +8,7 @@
 }
  .header-content {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     padding-left: 2rem;
@@ -44,9 +44,9 @@
     color: #ffb347;
 }
 .logo {
-    width: 68px;
-    height: 48px;
-    margin: 0 16px 0 0;
+    width: 48px;
+    height: 34px;
+    margin: 0 0 0 24px;
     object-fit: contain;
 }
 body {
