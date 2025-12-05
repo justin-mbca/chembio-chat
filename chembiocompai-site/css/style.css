@@ -93,9 +93,10 @@ header {
     box-shadow: 0 2px 8px rgba(30,60,114,0.08);
 }
 .logo {
-    width: 64px;
-    height: 64px;
-    margin-bottom: 0.5rem;
+    width: 134px;
+    height: 96px;
+    margin: 0;
+    object-fit: contain;
 }
 nav {
     margin-top: 1rem;
