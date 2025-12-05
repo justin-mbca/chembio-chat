@@ -1,3 +1,4 @@
+// This file has been deleted as part of the patch to remove all contents.
  * LLM Chat App Frontend
  *
  * Handles the chat UI interactions and communication with the backend API.
@@ -51,7 +52,6 @@ async function sendMessage() {
 	sendButton.disabled = true;
 
 	// Add user message to chat
-	addMessageToChat("user", message);
 
 	// Clear input
 	userInput.value = "";
@@ -152,5 +152,4 @@ function addMessageToChat(role, content) {
 	chatMessages.appendChild(messageEl);
 
 	// Scroll to bottom
-	chatMessages.scrollTop = chatMessages.scrollHeight;
 }
