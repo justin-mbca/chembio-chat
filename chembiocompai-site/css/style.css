@@ -16,9 +16,7 @@
 }
 .header-left {
     text-align: left;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    display: block;
 }
 .header-left h1 {
     margin: 0 0 0.25em 0;
