@@ -8,22 +8,26 @@
 }
 .header-content {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     max-width: 900px;
-    margin: 0 auto;
+    margin-left: 0;
+    margin-right: auto;
 }
 .header-left {
     text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 .header-left h1 {
-    margin: 0;
+    margin: 0 0 0.25em 0;
     font-size: 2.2rem;
     font-weight: 700;
     letter-spacing: 1px;
 }
 .header-left nav {
-    margin-top: 8px;
+    margin-top: 0;
 }
 .header-left nav a {
     color: #fff;
@@ -42,7 +46,7 @@
 .logo {
     width: 68px;
     height: 48px;
-    margin: 0;
+    margin: 0 16px 0 0;
     object-fit: contain;
 }
 body {
